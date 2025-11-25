@@ -1,0 +1,14 @@
+#Pide al usuario su nombre, apellido1 y apellido2 y el año de nacimiento
+#Devuelve una contraseña 3 primeras letras del nombre + 3 primeras letras
+#de cada apellido+ 2 últimas cifras del año de nacimiento
+
+def contrasena():
+    nombre=raw_input("Dime tu nombre: ")
+    ape1=raw_input("primer apellido: ")
+    ape2=raw_input("segundo apellido: ")
+    fecha=raw_input(" Año de nacimiento (aaaa): ")
+    password=nombre[0:3]+ape1[0:3]+ape2[0:3]+fecha[2:4]
+    print("Contrasena: "+password)
+
+
+contrasena()
